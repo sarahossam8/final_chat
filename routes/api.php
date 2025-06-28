@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\chatController;
+use App\Http\Controllers\Api\ChatController;
 use App\Http\Controllers\API\NotesController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\UserController;
@@ -37,8 +37,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/chats', [chatController::class, 'store']);
-    Route::get('/chats/{chat}', [chatController::class, 'show']);
-    Route::put('/chats/{id}/{chat_id}', [chatController::class, 'update']);
-    Route::delete('/chats/{chat}', [chatController::class, 'destroy']);
+    Route::post('/chats', [ChatController::class, 'store']);
+    Route::get('/chats/{chat}', [ChatController::class, 'show']);
+    Route::put('/chats/{id}/{chat_id}', [ChatController::class, 'update']);
+    Route::delete('/chats/{chat}', [ChatController::class, 'destroy']);
 });
