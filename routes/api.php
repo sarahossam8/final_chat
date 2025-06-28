@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\ChatController;
+use App\Http\Controllers\API\ChatController;
 use App\Http\Controllers\API\NotesController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\UserController;
