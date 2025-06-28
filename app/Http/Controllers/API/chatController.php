@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use App\Models\chat;
 
-class chatController extends Controller
+class ChatController extends Controller
 {
     public function index()
     {
