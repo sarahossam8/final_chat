@@ -126,7 +126,7 @@ class NotesController extends Controller
     try {
         $response = Http::withoutVerifying()
             ->timeout(30)
-            ->post('https://web-production-edcec.up.railway.app/predict', [
+            ->post('https://web-production-dced0.up.railway.app/predict', [
                 'text' => $text,
             ]);
 
